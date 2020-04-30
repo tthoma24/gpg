@@ -1,0 +1,78 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+OpenPGP Key Transition Statement for Teddy Thomas <tthoma24@mit.edu>
+Date: April 30th, 2020
+
+Hello all-
+
+You’re receiving this message because you’ve either signed my PGP key in the past, or I have your key in my keychain. The time has come, and my old PGP key is expiring, so I have created a new OpenPGP key and will be transitioning away from my old key.  The old key has not been compromised and will continue to be valid until July 31st, but I prefer any future correspondence to be encrypted to the new key, and will be making signatures with the new key going forward.
+
+I would like this new key to be re-integrated into the web of trust. This message is signed by both keys to certify the transition.  My new and old keys are signed by each other.  If you have signed my old key, I would appreciate signatures on my new key as well, provided that your signing policy permits that without re-authenticating me.
+
+The old key, which I am transitioning away from, is:
+
+pub   rsa2048 2014-01-27 [SC] [expires: 2020-08-01]
+      761F 5F1E 6E4F 64B9 C95B  5AD1 7800 7B98 21E9 7692
+
+The new key, to which I am transitioning, is:
+
+pub   rsa2048 2020-04-30 [SC] [expires: 2026-07-31]
+      5B91 3FDA 7AFE 0219 069E  6293 D14C DBF5 EE1D 396D
+
+The key may be downloaded from a public key server, or from: https://tthoma24.me/gpg/key-2020-04-30.asc
+
+To fetch the full new key from a public key server using GnuPG, run:
+
+  gpg --keyserver keys.openpgp.org \
+      --recv-key 5B913FDA7AFE0219069E6293D14CDBF5EE1D396D
+
+OR
+
+  gpg --keyserver keys.gnupg.net \
+      --recv-key 5B913FDA7AFE0219069E6293D14CDBF5EE1D396D
+
+If you already know my old key, you can now verify that the new key is signed by the old one:
+
+  gpg --check-sigs 5B913FDA7AFE0219069E6293D14CDBF5EE1D396D
+
+If you are satisfied that you've got the right key, and the User IDs match what you expect, I would appreciate it if you would sign my key:
+
+  gpg --sign-key 5B913FDA7AFE0219069E6293D14CDBF5EE1D396D
+
+You can upload your signatures to a public keyserver directly:
+
+  gpg --keyserver keys.openpgp.org \
+      --send-key 5B913FDA7AFE0219069E6293D14CDBF5EE1D396D
+
+OR
+
+  gpg --keyserver keys.gnupg.net \
+      --send-key 5B913FDA7AFE0219069E6293D14CDBF5EE1D396D
+
+If you'd like any further verification or have any questions about the transition please feel free to contact me.
+
+To verify the integrity of this statement:
+
+  wget -q -O- https://tthoma24.me/gpg/key-transition-2020-04-30.txt | gpg —verify
+
+Thank you so much!
+
+- -Teddy
+-----BEGIN PGP SIGNATURE-----
+
+iQEzBAEBCgAdFiEEW5E/2nr+AhkGnmKT0Uzb9e4dOW0FAl6rPNYACgkQ0Uzb9e4d
+OW0eyAf+MmgQ8zlVRcHy1EB0Itq/P6cbBWKb58z6tXjF499pDpYtdhr/mRxa8tvt
+L64LKnyrwwHPws+ee7E1+ekTCRA+cm8yUHu/xt/Ww3UAVn1Y/fkxozgsnjngECj+
+GUDB1BsCfMQfc28VcmxY6Lw0BVrhxjX3lnpYemreduoZ+wKKmMCsaFQqL/3RK+fD
+lMSNJPd1NfQryClftBRmy1yoTJTjJ660rsBJtn79oVOPd7eoiU5FKPINY2sMKhvD
+G5lWGAVkNRhrOduboOWmToAfxcep37A7Wpe+SqsL33X+Av+kiUwa1aYiFH7lxGsB
+wd00NotX/+YizJbTpy/GuLb+7CTm3YkBMwQBAQoAHRYhBHYfXx5uT2S5yVta0XgA
+e5gh6XaSBQJeqzzaAAoJEHgAe5gh6XaSxNcH+gLl5pVPO+FKQtdCA0be3BT2M+hm
+G9gPYEQoTRUu6ISzLFOFtdhjdp/PBxKt7fBCKPqDtbG2l46wBGy3REE6HUuKbpw8
+O0rC+XyrN26/dQ0yqcdCYv9U2gzK4Aa4e14uuMOImowieKBZZ028akfm1bjcBeAN
+9exhrAGMzLttb/e4s+G99j05usz+KZOHiG4MSCTUfcpsLK0wMOvy1ZR7w/72kH5j
+p5HE/Z7d9UUMARFrav3xZnhFOBcCEW5b2o4FgX+wxYW70pes52w2C61+Gxw/nJtu
+FoWZ/CikrO1vVspBFksD8f1ui01Qpm1fNT95yR4HfNN5Uj8N5DFL7Jr51HQ=
+=mqv1
+-----END PGP SIGNATURE-----
